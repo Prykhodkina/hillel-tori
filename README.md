@@ -1,3 +1,3 @@
 # hillel-tori
-Viktoriia Prykhodkina
+I'm Viktoriia Prykhodkina and
 I work at the Ukrainian Hydrometeorological Institute. Kyiv, Ukraine.
