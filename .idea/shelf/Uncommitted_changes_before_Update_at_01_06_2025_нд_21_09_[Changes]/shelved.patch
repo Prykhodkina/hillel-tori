@@ -1,0 +1,152 @@
+Index: .idea/hillel-tori.iml
+===================================================================
+diff --git a/.idea/hillel-tori.iml b/.idea/hillel-tori.iml
+deleted file mode 100644
+--- a/.idea/hillel-tori.iml	(revision c5944436f93dbe4c04eb8851ebcf7c40b2d01426)
++++ /dev/null	(revision c5944436f93dbe4c04eb8851ebcf7c40b2d01426)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="WEB_MODULE" version="4">
+-  <component name="NewModuleRootManager">
+-    <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: README.md
+===================================================================
+diff --git a/README.md b/README.md
+deleted file mode 100644
+--- a/README.md	(revision c5944436f93dbe4c04eb8851ebcf7c40b2d01426)
++++ /dev/null	(revision c5944436f93dbe4c04eb8851ebcf7c40b2d01426)
+@@ -1,3 +0,0 @@
+-# hillel-tori
+-I'm Viktoriia Prykhodkina and
+-I work at the Ukrainian Hydrometeorological Institute. Kyiv, Ukraine.
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/hm-5/.idea/modules.xml
+rename from .idea/modules.xml
+rename to hm-5/.idea/modules.xml
+--- a/.idea/modules.xml	(revision c5944436f93dbe4c04eb8851ebcf7c40b2d01426)
++++ b/hm-5/.idea/modules.xml	(date 1748801079228)
+@@ -2,7 +2,7 @@
+ <project version="4">
+   <component name="ProjectModuleManager">
+     <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/hillel-tori.iml" filepath="$PROJECT_DIR$/.idea/hillel-tori.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/hm-5.iml" filepath="$PROJECT_DIR$/.idea/hm-5.iml" />
+     </modules>
+   </component>
+ </project>
+\ No newline at end of file
+Index: hm-5/js/script.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hm-5/js/script.js b/hm-5/js/script.js
+new file mode 100644
+--- /dev/null	(date 1748799331573)
++++ b/hm-5/js/script.js	(date 1748799331573)
+@@ -0,0 +1,10 @@
++'use strict'
++
++let name = prompt("What is your name?");
++
++
++let showGreeting = confirm("Do you want to see a greeting?");
++
++if (showGreeting && name) {
++    alert("Hello, " + name + "! Welcome to the site!");
++}
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"VcsDirectoryMappings\">\r\n    <mapping directory=\"$PROJECT_DIR$\" vcs=\"Git\" />\r\n    <mapping directory=\"$PROJECT_DIR$/hm-5\" vcs=\"Git\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+--- a/.idea/vcs.xml	(revision c5944436f93dbe4c04eb8851ebcf7c40b2d01426)
++++ b/.idea/vcs.xml	(date 1748800944443)
+@@ -2,6 +2,5 @@
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+-    <mapping directory="$PROJECT_DIR$/hm-5" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: hm-5/.idea/php.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hm-5/.idea/php.xml b/hm-5/.idea/php.xml
+new file mode 100644
+--- /dev/null	(date 1748801199115)
++++ b/hm-5/.idea/php.xml	(date 1748801199115)
+@@ -0,0 +1,19 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="MessDetectorOptionsConfiguration">
++    <option name="transferred" value="true" />
++  </component>
++  <component name="PHPCSFixerOptionsConfiguration">
++    <option name="transferred" value="true" />
++  </component>
++  <component name="PHPCodeSnifferOptionsConfiguration">
++    <option name="highlightLevel" value="WARNING" />
++    <option name="transferred" value="true" />
++  </component>
++  <component name="PhpStanOptionsConfiguration">
++    <option name="transferred" value="true" />
++  </component>
++  <component name="PsalmOptionsConfiguration">
++    <option name="transferred" value="true" />
++  </component>
++</project>
+\ No newline at end of file
+Index: hm-5/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hm-5/.idea/vcs.xml b/hm-5/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1748800672126)
++++ b/hm-5/.idea/vcs.xml	(date 1748800672126)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings" defaultProject="true" />
++</project>
+\ No newline at end of file
+Index: hm-5/css/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hm-5/css/style.css b/hm-5/css/style.css
+new file mode 100644
+--- /dev/null	(date 1748800944035)
++++ b/hm-5/css/style.css	(date 1748800944035)
+@@ -0,0 +1,5 @@
++*
++{
++    margin: 0;
++    padding: 0;
++}
+\ No newline at end of file
+diff --git a/.idea/.gitignore b/hm-5/.idea/.gitignore
+rename from .idea/.gitignore
+rename to hm-5/.idea/.gitignore
+diff --git a/index.html b/hm-5/index.html
+rename from index.html
+rename to hm-5/index.html
