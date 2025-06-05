@@ -1,15 +1,17 @@
 'use strict'
 
 let userName = prompt("What is your name?");
+
 let age = Number(prompt("How old are you?"));
+
 let consent = confirm("Do you agree to participate?");
+
 let status = consent ? "Agree" : "Not agree";
 
 let userId = 12345678901234567890n;
 
 let bonusCode = null;
 
-// Second name (undefined)
 let secondName;
 
 
