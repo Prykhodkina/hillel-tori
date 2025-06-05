@@ -24,13 +24,15 @@
     // 8. Number of bonuses per account (number)
     let bonusPoints = 150;
 
-    // Show output in console
-    console.log("Username:", username);
-    console.log("Age:", age);
-    console.log("Is Verified:", isVerified);
-    console.log("Registration Date:", registrationDate);
-    console.log("Card Number:", cardNumber);
-    console.log("Promo Code:", promoCode);
-    console.log("Alternate Name:", altName);
-    console.log("Bonus Points:", bonusPoints);
+ 
+
+console.log(`User name: ${username}, Age: ${age}, Registration date: ${registrationDate}`);
+console.log(`Alt name: ${altName}, Bonus points: ${bonusPoints}`);
+console.log(`Promo Code: ${promoCode}`);
+
+let now = new Date();
+console.log(now);
+
+console.log(typeof username)
+console.log (typeof null);
 
