@@ -32,6 +32,4 @@ console.log(`User name: ${userName}, Age: ${age}, Registration date: ${registrat
 console.log(`Alt name: ${altName}, Bonus points: ${bonusPoints}`);
 console.log(`Promo Code: ${promoCode}`);
 
-console.log(typeof username)
-console.log (typeof null);
 
