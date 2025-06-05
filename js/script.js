@@ -1,37 +1,36 @@
 'use strict'
 
-    // 1. Username (string)
-    let username = "Tori April";
 
-    // 2. Age (number)
-    let age = 32;
+let userName = "Tori April";
+console.log("Username:", typeof userName);// String - рядкове значення
 
-    // 3. Is the user verified? (boolean)
-    let isVerified = true;
+let age = 32;
+console.log("Age:",typeof age);// Number - числове значення
 
-    // 4. Registration date (string as date)
-    let registrationDate = new Date(2023,4,14);
+let isVerified = true;
+console.log("Is Verified:",typeof isVerified);// Boolean - логічне значення типу правда/неправда
 
-    // 5. User card number (BigInt)
-    let cardNumber = 1234567890123456n;
+let registrationDate = new Date(2024,4, 14);// рядкове значення перетворене на дату
+console.log("Registration Date:",typeof registrationDate);
 
-    // 6. Promo code (null or string)
-    let promoCode = null;
+let cardNumber = 1234567890123456n;
+console.log("Card Number:",typeof cardNumber);// Bigint використовуються для зберігання великих числових значень, які занадто великі для Number
 
-    // 7. Alternate name (not defined)
-    let altName;
+let promoCode = null;
+console.log("Promo Code:",typeof promoCode);// Null (тут у майбутньому буде внесене значення)
 
-    // 8. Number of bonuses per account (number)
-    let bonusPoints = 150;
+let altName;
+console.log("Alternate Name:",typeof altName);// Unidentified відсутнє значення
 
- 
+let bonusPoints = 150;
+console.log("Bonus Points:",typeof bonusPoints);// Number - числове значення
 
-console.log(`User name: ${username}, Age: ${age}, Registration date: ${registrationDate}`);
+
+
+
+console.log(`User name: ${userName}, Age: ${age}, Registration date: ${registrationDate}`);
 console.log(`Alt name: ${altName}, Bonus points: ${bonusPoints}`);
 console.log(`Promo Code: ${promoCode}`);
-
-let now = new Date();
-console.log(now);
 
 console.log(typeof username)
 console.log (typeof null);
