@@ -1,3 +1,5 @@
 # hillel-tori
-I'm Viktoriia Prykhodkina and
-I work at the Ukrainian Hydrometeorological Institute. Kyiv, Ukraine.
+Створити скрипт який має визначити середнє арифметичне трьох чисел з насутпними умовами:
+
+отримати від користувача через три prompt три числа
+показати через alert середнє арифметичне цих чисел
