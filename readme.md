@@ -1,3 +1,6 @@
 # hillel-tori
-I'm Viktoriia Prykhodkina and
-I work at the Ukrainian Hydrometeorological Institute. Kyiv, Ukraine.
+Задача
+
+Напишіть функцію greetUser, яка приймає один параметр — ім'я користувача (рядок),
+
+і повертає рядок виду: "Привіт, [ІМ'Я]!"
