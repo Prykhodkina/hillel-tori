@@ -7,7 +7,7 @@ for (let i = 10; i <= 20; i++) {
 console.log(`Numbers from 10 to 20:`, line);
 
 for (let i = 10; i <= 20; i++) {
-    console.log(i + `squared is` + (i * i));
+    console.log(i + ` squared is ` + (i * i));
 }
 
 for (let i = 1; i <= 10; i++) {
@@ -70,7 +70,7 @@ for (let i = 1; i <= number; i++) {
 console.log(`Sum of even divisors:`, sumEvenDivisors);
 
 for (let i = 1; i <= 10; i++) {
-    console.log(`--- Table for ${i} ---`);
+    console.log(`${i}`);
     for (let j = 1; j <= 10; j++) {
         console.log(`${i} x ${j} = ${i * j}`);
     }
