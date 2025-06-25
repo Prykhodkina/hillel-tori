@@ -1,0 +1,71 @@
+Index: js/script.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>'use strict'\r\n
+===================================================================
+diff --git a/js/script.js b/js/script.js
+--- a/js/script.js	(revision cf99829a8cd9f90a103ddd8d58bdc3d833b4a570)
++++ b/js/script.js	(date 1748967510521)
+@@ -1,1 +1,36 @@
+-'use strict'
++"use strict"
++// Username (string)
++let username = "Tori April";
++
++// Age (number)
++let age = 32;
++
++// Is the user verified? (boolean)
++let isVerified = true;
++
++// Registration date (string as date)
++const registrationDate = new Date(2025, 5, 3);
++
++// User card number (BigInt)
++let cardNumber = 5167302232993137n;
++
++let promoCode = null;
++
++// Alternate name (not defined)
++let altName = null;
++
++// Number of bonuses per account (number)
++let bonusPoints = 150;
++
++
++
++
++console.log(`User name: ${username}, Age: ${age}, Registration date: ${registrationDate}`);
++console.log(`Alt name: ${altName}, Bonus points: ${bonusPoints}`);
++console.log(`Promo Code: ${promoCode}`);
++
++let now = new Date();
++console.log(now);
++
++console.log(typeof username)
++console.log (typeof null);
+\ No newline at end of file
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!doctype html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\"\r\n          content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n\r\n</body>\r\n</html>
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision cf99829a8cd9f90a103ddd8d58bdc3d833b4a570)
++++ b/index.html	(date 1748891607249)
+@@ -5,9 +5,13 @@
+     <meta name="viewport"
+           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+-    <title>Document</title>
++    <title>hm-6</title>
++    <link rel="stylesheet" href="css/style.css">
++
+ </head>
+ <body>
+ 
++
++<script src="js/script.js"></script>
+ </body>
+ </html>
+\ No newline at end of file
