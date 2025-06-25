@@ -11,5 +11,5 @@ function generateKey(length, characters) {
     return result;
 }
 
-const key = generateKey(8, '0123456789abcdefghijklmnopqrstuvwxyz');
-console.log('Generated key:', key);
+const key = generateKey(8, `0123456789abcdefghijklmnopqrstuvwxyz`);
+console.log(`Generated key:`, key);
