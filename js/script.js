@@ -35,19 +35,19 @@ if (primeNum){
 } else {
     console.log(`${num} - is not a prime number`);
 }
-const num2 = 3;
-let isPowerOfThree = false;
-if (num2 >= 1) {
-    let power = 1;
-    while (power < num2) {
-        power *= 3;
-    }
-    if (power === num2) {
-        isPowerOfThree = true;
-    }
-}
-if (isPowerOfThree) {
-    console.log(`${num2} — can be obtained as 3^n`);
-} else {
+
+const num2 = 9;
+let isPowerOfThree = num2;
+
+if (isPowerOfThree < 1) {
     console.log(`${num2} — cannot be obtained as 3^n`);
+} else {
+    while (isPowerOfThree % 3 === 0) {
+        isPowerOfThree = isPowerOfThree / 3;
+    }
+    if (isPowerOfThree === 1) {
+        console.log(`${num2} — can be obtained as 3^n`);
+    } else {
+        console.log(`${num2} — cannot be obtained as 3^n`);
+    }
 }
