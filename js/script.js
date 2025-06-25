@@ -11,6 +11,5 @@ function generateKey(length, characters) {
     return result;
 }
 
-
 const key = generateKey(16, 'abcdefghijklmnopqrstuvwxyz0123456789');
 console.log('Generated key:', key);
