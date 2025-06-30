@@ -1,3 +1,4 @@
 # hillel-tori
-I'm Viktoriia Prykhodkina
+Viktoriia Prykhodkina
+
 Kyiv, Ukraine
