@@ -1,15 +1,12 @@
-'use strict'
+`use strict`
 
-function padString (length, characters) {
-    let result = ` `;
-
-    for (let i = 0; i < length; i++) {
-        const randomIndex = Math.floor(Math.random() * characters.length);
-        result += characters[randomIndex];
+function removeElement(arr, item) {
+    const index = arr.indexOf(item);
+    if (index !== -1) {
+        arr.splice(index, 1);
     }
-
-    return result;
+    return  arr;
 }
-
-const key = padString(8, `0123456789abcdefghijklmnopqrstuvwxyz`);
-console.log(`Generated key:`, key);
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+removeElement(arr, 3);
+console.log(arr);
