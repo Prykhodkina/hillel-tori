@@ -1,5 +1,4 @@
 # hillel-tori
-Реалізуйте функцію generateKey(length, characters), яка повертає рядок випадкових символів із набору characters довжиною length
-
+Реалізуйте функцію removeElement(array, item), щоб видалити елемент item з масиву array.
 
 
