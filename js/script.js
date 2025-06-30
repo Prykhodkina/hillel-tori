@@ -1,12 +1,19 @@
 `use strict`
 
-function removeElement(arr, item) {
-    const index = arr.indexOf(item);
-    if (index !== -1) {
-        arr.splice(index, 1);
+function getPositiveNum(arr) {
+    const positiveArr = [];
+    if (arr.length === 0) {
+        return `The input array is empty.`;
     }
-    return  arr;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+        positiveArr.push(arr[i]);
+        }
+    }
+    if (positiveArr.length > 0) {
+        return positiveArr;
+    }
 }
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-removeElement(arr, 3);
-console.log(arr);
+const arr = [1, -2, 3, -4, 5, 6, 7, -8, 9];
+const result = getPositiveNum(arr);
+console.log(result);
