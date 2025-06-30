@@ -14,7 +14,7 @@ function getPositiveNum(arr) {
         return positiveArr;
     }
 }
-const arr = [1, -2, 3, -4, 5, 6, 7, -8, 9];
+const arr = [1, 2, 3, -1, -2, -3];
 const result = getPositiveNum(arr);
 console.log(result);
 
