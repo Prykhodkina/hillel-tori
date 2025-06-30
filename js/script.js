@@ -1,6 +1,6 @@
 'use strict'
 
-function generateKey(length, characters) {
+function padString (length, characters) {
     let result = ` `;
 
     for (let i = 0; i < length; i++) {
@@ -11,5 +11,5 @@ function generateKey(length, characters) {
     return result;
 }
 
-const key = generateKey(8, `0123456789abcdefghijklmnopqrstuvwxyz`);
+const key = padString(8, `0123456789abcdefghijklmnopqrstuvwxyz`);
 console.log(`Generated key:`, key);
