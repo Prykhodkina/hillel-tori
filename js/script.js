@@ -1,132 +1,78 @@
 `use strict`
 
-const num = [16, -37, 54, -4, 72, -56, 47, 4, -16, 25, -37, 46, 4, -51, 27, -63, 4, -54, 76, -4, 12, -35, 4, 47];
+const users = [
+    {
+        "index": 0,
+        "isActive": true,
+        "balance": "$2,226.60",
+        "name": "Eugenia Sawyer",
+        "gender": "female",
+        "phone": "+1 (840) 583-3207",
+        "address": "949 John Street, Rose, Puerto Rico, 1857"
+    },
+    {
+        "index": 1,
+        "isActive": true,
+        "balance": "$2,613.77",
+        "name": "Pauline Gallegos",
+        "gender": "female",
+        "phone": "+1 (985) 593-3328",
+        "address": "328 Greenpoint Avenue, Torboy, North Dakota, 6857"
+    },
+    {
+        "index": 2,
+        "isActive": false,
+        "balance": "$3,976.41",
+        "name": "Middleton Chaney",
+        "gender": "male",
+        "phone": "+1 (995) 591-2478",
+        "address": "807 Fleet Walk, Brutus, Arkansas, 9783"
+    },
+    {
+        "index": 3,
+        "isActive": true,
+        "balance": "$1,934.58",
+        "name": "Burns Poole",
+        "gender": "male",
+        "phone": "+1 (885) 559-3422",
+        "address": "730 Seba Avenue, Osage, Alabama, 6290"
+    },
+    {
+        "index": 4,
+        "isActive": true,
+        "balance": "$3,261.65",
+        "name": "Mcfadden Horne",
+        "gender": "male",
+        "phone": "+1 (942) 565-3988",
+        "address": "120 Scholes Street, Kirk, Michigan, 1018"
+    },
+    {
+        "index": 5,
+        "isActive": false,
+        "balance": "$1,790.56",
+        "name": "Suzette Lewis",
+        "gender": "female",
+        "phone": "+1 (837) 586-3283",
+        "address": "314 Dunne Place, Bawcomville, Guam, 9053"
+    }
+]
 
-function calculateAverage(arr) {
-    let sum = 0;
-    let count = 0;
-     for (let i = 0; i < arr.length; i++) {
-        const item = arr[i];
-        if (typeof item === `number` && !isNaN(item)) {
-            sum += item;
-            count++;
-        }
-    }
-    if (count === 0) {
-        return `No numeric values found`;
-    }
-    return sum / count;
+function balancePhone(filterBalance) {
+    return parseFloat(filterBalance.replace(`$`, ``).replace(`,`, ``));
 }
-const average = calculateAverage(num);
-console.log(`${average}`);
-
-function findMaxAndIndex(arr) {
-    if (!arr || arr.length === 0) {
-        return {max: undefined, index: undefined};
+    const phones = [];
+    for (let i = 0; i < users.length; i++) {
+    const fin = balancePhone(users[i].balance);
+    if (fin > 2000){
+        phones.push(users[i].phone);
     }
-    const max = Math.max(...num);
-    const index = num.indexOf(max);
-    return {max: max, index: index};
-}
-const maxAndIndex = findMaxAndIndex(num);
-console.log(`Max element: ${Math.max(...num) }`);
-console.log(`Index of maximum number: ${maxAndIndex.index}`);
-
-
-function minElement(arr) {
-    if (!arr === arr.length) {
-        return `No numeric values found`;
     }
-    let min = Math.min(...num);
-    let index = 0;
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === min) {
-            min = arr[i];
-            index = i;
-        }
-    }
-    return {min: min, index: index};
-}
-const minIndex = minElement(num);
-console.log(`Min element: ${minIndex.min}`);
-console.log(`Index of minimum number: ${minIndex.index}`);
 
-function countNegative(arr) {
-    let count = 0;
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] < 0) {
-            count++;
-        }
-    }
-    return count;
-}
-const negative = countNegative(num);
-console.log(`Negative element: ${negative}`);
+console.log(`Number phone with balance > 2000:`, phones);
 
-
-function oddPositiveElement(arr){
-    let count = 0;
-    for (let i = 0; i < arr.length; i++) {
-        const item = arr[i];
-        if (item > 0 && item % 2 !== 0) {
-            count++;
-        }
+    let total = 0;
+    for (let i = 0; i < users.length; i++) {
+        const fin = balancePhone(users[i].balance);
+        total += fin;
     }
-    return count;
-}
-const oddPositive = oddPositiveElement(num);
-console.log(`Number of odd positive elements: ${oddPositive}`);
-
-function countPositiveElement(arr){
-    let count = 0;
-    for (let i = 0; i < arr.length; i++) {
-        const item = arr[i];
-        if (item > 0 && item % 2 === 0) {
-            count++;
-        }
-    }
-    return count;
-}
-const positiveElement = countPositiveElement(num);
-console.log(`The number of even positive elements: ${positiveElement}`);
-
-function sumPositiveNum(arr){
-    let count = 0;
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > 0 && arr[i] % 2 === 0){
-            count += arr[i];
-        }
-    }
-    return count;
-}
-const sum = sumPositiveNum(num);
-console.log(`Sum of even positive elements: ${sumPositiveNum(num)}`);
-
-function sumNegativeNum(arr){
-    let count = 0;
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > 0 && arr[i] % 2 !== 0){
-            count += arr[i];
-        }
-    }
-    return count;
-}
-const sumNegative = sumNegativeNum(num);
-console.log(`Sum of even positive elements: ${sumNegativeNum(num)}`);
-
-const product = num.reduce((acc, item) => acc * item);
-console.log(`Product: ${product}`);
-
-function somethingElse(arr) {
-    if (!arr || arr.length === 0) {
-        return {max: undefined};
-    }
-    const max = Math.max(...arr);
-    for (let i = 0; i < arr.length; i++ ) {
-        if (arr[i] !== max) {
-            arr[i] = 0;
-        }
-    }
-    return arr;
-}
-console.log(somethingElse(num));
+console.log(`Sum all users balance: ${total.toFixed(2)}`);
