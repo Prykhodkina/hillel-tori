@@ -2,19 +2,22 @@
     margin: 0;
     padding: 0;
 }
-
-.card {
-    padding: 5px;
-    border: 1px solid #ccc;
-    margin: 10px;
-    display: inline-block;
+body{
+    background-color: #ffffff;
+    color: #000;
 }
-.select {
-    padding: 8px;
+.btn {
+    padding: 10px;
     border: 1px solid #ccc;
     margin: 10px;
 
 }
-.hidden {
-    display: none;
+.dark-theme{
+    background-color: #000;
+    color: #ffffff;
+}
+.dark-theme .btn {
+    background-color: #222;
+    color: #fff;
+    border-color: cadetblue;
 }
