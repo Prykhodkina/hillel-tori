@@ -48,3 +48,4 @@ table.addEventListener('click', (e) => {
 });
 
 renderProducts();
+
