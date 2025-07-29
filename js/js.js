@@ -5,7 +5,7 @@ function Student(firstName, lastName, birthYear, grades) {
     this.lastName = lastName;
     this.birthYear = birthYear;
     this.grades = grades;
-    this.attendance = new Array(25).fill(undefined);
+    this.attendance = new Array(25);
     this.attendanceIndex = 0;
 }
 Student.prototype.getAge = function () {
@@ -44,9 +44,9 @@ Student.prototype.summary = function () {
     const attendanceRatio = total > 0 ? present / total : 0;
 
     if (avgGrade > 90 && attendanceRatio > 0.9) {
-        return "Well done!";
+        return "Молодець!";
     } else if (avgGrade > 90 || attendanceRatio > 0.9) {
-        return "Good, but you can do better";
+        return "Добре, але можна краще";
     } else {
         return "Редиска!";
     }
@@ -54,7 +54,7 @@ Student.prototype.summary = function () {
 
 const student1 = new Student("Anna", "Shevchenko", 2004, [100, 95, 92]);
 const student2 = new Student("Bohdan", "Melnyk", 2003, [88, 84, 79]);
-const student3 = new Student("Daria", "Koval", 2002, [60, 58, 65]);
+const student3 = new Student("Dariia", "Koval", 2002, [60, 58, 65]);
 
 for (let i = 0; i < 23; i++) student1.present();
 for (let i = 0; i < 12; i++) student2.present();
