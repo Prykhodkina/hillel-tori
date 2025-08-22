@@ -1,12 +1,14 @@
 hillel-tori 
 
-(Hw-45)
+(Hw-46)
 
-Мета: поєднання location, DOM, класів і роботи з історією.
+Мета: глибше зрозуміти властивості window.location та розібрати URL на частини.
 
 Умови:
-Реалізуйте навігаційне меню (HTML) з 3 посиланнями: /home, /about, /contact.
-Створіть клас Navigation, який:
-Відслідковує window.location.pathname.
-Додає CSS-клас "active" до відповідного пункту меню.
-Реагує на popstate і вручну змінює URL при кліку (через pushState).
+Створіть клас URLParser з конструктором, що приймає повний URL.
+Додайте геттери:
+protocol → повертає http: або https:
+hostname → повертає домен
+path → повертає шлях (/products/item)
+queryParams → повертає об’єкт з query-параметрами ({ search: "book", page: "2" })
+!!! ВИКОРИСТАННЯ window.location або location ЗАБОРОНЕНО !!!
