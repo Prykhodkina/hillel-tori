@@ -1,7 +1,8 @@
 hillel-tori 
 
-(Hw-50)
+(Hw-52)
 
+Переписати на async / await функції
 Ви маєте функцію fetchUserData(userId), яка повертає проміс із даними користувача (емуляція запиту до API).
 
 Потрібно написати функцію getUsersData(userIds), яка:

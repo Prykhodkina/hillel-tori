@@ -13,23 +13,24 @@ function fetchUserData(userId) {
     });
 }
 
-function getUsersData(userIds) {
+async function getUsersData(userIds) {
     const promises = userIds.map(id => fetchUserData(id));
+    const results = await Promise.allSettled(promises);
 
-    return Promise.allSettled(promises).then(results => {
-        const success = results
-            .filter(r => r.status === "fulfilled")
-            .map(r => r.value);
+    const success = results
+        .filter(r => r.status === "fulfilled")
+        .map(r => r.value);
 
-        const errors = results
-            .filter(r => r.status === "rejected")
-            .map(r => r.reason);
+    const errors = results
+        .filter(r => r.status === "rejected")
+        .map(r => r.reason);
 
         return {success, errors};
-    });
+
 }
-const userIds = [1, 2, 3, 4, 5];
-getUsersData(userIds).then((result) => {
-    console.log("Успішні:", result.success);
-    console.log("Помилки:", result.errors);
-});
+
+(async() => {
+    const {success, errors} = await getUsersData([1, 2, 3, 4, 5]);
+    console.log("Успішні:", success);
+    console.log("Помилки:", errors);
+})();
